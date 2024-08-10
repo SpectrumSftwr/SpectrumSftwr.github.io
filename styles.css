@@ -7,6 +7,7 @@
   justify-content: center;
   height: 100vh;
   align-items: center;
+  margin-left: 4vh;
 }
 
 .cta {
@@ -14,22 +15,34 @@
   flex-direction: column;
   justify-content: center;
   align-items: center; 
-  font-size: 18px;
+  font-size: 1.7vh;
   padding: 8px;
   margin-bottom: 14px;
 }
 
 .large-cta {
-  font-size: 72px;
+  font-size: 4.9vh;
   letter-spacing: 2.5px;
   margin-bottom: 14px;
- 
+
 }
 
-.form-group {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+@media screen and (max-width: 500px) {
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    justify-items: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .form-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 .accent-button {
@@ -52,16 +65,12 @@
   border: 0;
 }
 
-button::hover { 
-  padding: 0;
-}
-
 .group {
   display: flex;
   line-height: 30px;
   align-items: center;
   position: relative;
-  max-width: 200px;
+  max-width: 500px;
   padding: 10px;
 }
 
